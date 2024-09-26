@@ -3,26 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C. Schopf</title>
+    <title>Frank Savage</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
 </head>
 <body>
     <header>
         <nav class="header-nav">
             <ul>
                 <li class="left"><a href=""><img src="img/fs-logo-2.png" width="100px" height="auto"></a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
+                <li>Home</a></li>
+                <li>About</a></li>
                 <li><a href="">Books</a></li>
-                <li><a href="">Documentaries</a></li>
-                <li class="right"><a href="">Contact</a></li>
-                <li><a href="#"><img src="img/nav-icon.png"></a></li>
+                <li>Documentaries</a></li>
+                <li>Contact</a></li>
+                <li id="hamburger" class="right"><a href="#"><img src="img/nav-icon.png"></a></li>
             </ul>
         </nav>
+        <nav class="header-nav-mobile">
+            <div class="nav-one">
+                <a href=""><img src="img/fs-logo-2.png" width="100px" height="auto"></a>
+            </div>
+            <div>
+                <a id="mobilehamburger" href="#"><img src="img/nav-icon.png"></a>
+            </div>
+        </nav>
+
+<!-- Fullscreen Menu (Initially Hidden) -->
+<div id="overlay" class="overlay">
+    <a href="#" class="close-btn" id="close-btn">&times;</a>
+    <div class="overlay-content">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Books</a>
+        <a href="#">Documentaries</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+
         <div class="hero">
             <p>New York Times Best Selling Author</p>
             <h1>Frank Savage</h1>
@@ -35,5 +57,6 @@
     <footer class="footer">
     
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>

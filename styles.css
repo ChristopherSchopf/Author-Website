@@ -27,6 +27,7 @@ ol, ul {
 body {
     font-family: "Outfit", sans-serif;
     margin: 0;
+    padding: 0;
 }
 
 button {
@@ -65,11 +66,15 @@ header {
 }
 
 .right {
-    margin-right: auto;
+    margin-left: auto;
 }
 
 li:nth-last-child(1) {
     margin-right: 8rem; /* Move the hamburger closer to the center */
+}
+
+.header-nav-mobile {
+    display: none;
 }
 
 .hero {
@@ -92,16 +97,109 @@ li:nth-last-child(1) {
     margin: 0;
 }
 
-
-
-@media (max-width: 1024px) {
-
+/* Fullscreen overlay menu */
+.overlay {
+    height: 100%;  /* Fullscreen height */
+    width: 100%;   /* Fullscreen width */
+    position: fixed;  /* Stays in place */
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
+    display: none;  /* Initially hidden */
+    z-index: 1;     /* Ensure it sits above all other content */
 }
 
-@media (max-width: 768px) {
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay-content a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay-content a:hover {
+    text-decoration: underline;
     
 }
 
-@media (max-width: 400px) {
-
+/* Close button in the top right corner */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: white;
+    text-decoration: none;
 }
+
+.close-btn:hover {
+    color: #ccc;
+}
+
+@media (max-width: 1200px) {
+    .header-nav {
+        display: none;
+    }
+    .header-nav-mobile {
+        display: flex;
+        gap: 1rem;
+        text-transform: uppercase;
+        align-items: center;
+        justify-content: space-between;
+        padding: .5rem;
+    }
+    .hero h1 {
+        font-size: 6rem;
+    }
+    .hero p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 4rem;
+    }
+    .hero p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .hero p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .header-nav li {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+}
+
+
+
+
+
+
