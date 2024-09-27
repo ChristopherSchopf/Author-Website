@@ -133,6 +133,189 @@ li:nth-last-child(1) {
     padding: 0 2.5rem;
 }
 
+.travel-section {
+    display: flex;
+    justify-content: center;
+    padding: 0 20rem;
+    padding-bottom: 2rem;
+}
+
+.travel-left, .travel-right {
+    padding: 0 2rem;
+    padding-top: 0;
+    width: 50%;
+}
+
+.travel-left h2 {
+    margin-top: 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.travel-left h3 {
+    font-size: 1.5rem;
+    font-weight: 450;
+}
+
+.travel-left p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+}
+
+.travel-right img {
+    width: 100%;
+    height: auto;
+}
+
+.travel {
+    margin-top: 1.5rem;
+}
+
+
+.travel-left button {
+    background-color: #F5C001;
+    border: none;
+    padding: 1.25rem 2.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.books-header {
+    padding: 0 22rem;
+    padding-bottom: 2rem;
+}
+
+.books-header h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.books {
+    padding: 0 22rem;
+    padding-bottom: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    position: relative; /* Ensure relative positioning */
+}
+
+.book {
+    position: relative; /* Allows absolute positioning of overlay */
+    overflow: hidden;   /* Ensures overlay is contained within book */
+}
+
+.book img {
+    display: block;
+    width: 100%;
+    max-width: 300px; /* Maintain the maximum width */
+    height: auto;
+    transition: .5s ease; /* Transition for image */
+}
+
+/* Styles for the overlay */
+.book-overlay {
+    position: absolute;      /* Position it absolutely */
+    top: 0;                 /* Align it to the top */
+    left: 0;                /* Align it to the left */
+    right: 0;               /* Align it to the right */
+    bottom: 0;              /* Align it to the bottom */
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+    color: white;           /* Text color */
+    display: flex;          /* Center text */
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    opacity: 0;             /* Initially hidden */
+    transition: opacity 0.3s ease; /* Transition for fade effect */
+}
+
+/* Show overlay on hover */
+.book:hover .book-overlay {
+    opacity: 1; /* Fade in overlay on hover */
+}
+.book-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-content h3 {
+    font-size: 1.5rem;
+}
+
+.book-content p {
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.book-content button {
+    background-color: #F5C001;
+    border: none;
+    padding: .75rem 1.5rem;
+    text-transform: uppercase;
+}
+
+.social-header {
+    padding: 0 22rem;
+    padding-bottom: 2rem;
+}
+
+.social-header h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.social-section {
+    padding-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.social-section button {
+    border: none;
+    background-color: #F5C001;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    width: 200px;
+}
+
+.bottom-contact {
+    padding: 2rem 22rem;
+    background-color: #0A4841;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-contact h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.email-form button {
+    color:#202530;
+    background-color:#fff;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    font-weight: 550;
+}
+
+input[type="email"] {
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #fff; /* Add only a bottom border */
+    outline: none; /* Remove the default outline on focus */
+    background-color: transparent;
+}
 
 /* Fullscreen overlay menu */
 .overlay {
