@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank Savage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <ul>
+                <li class="left"><a href=""><img src="img/fs-logo-2.png" width="100px" height="auto"></a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/books.html">Books</a></li>
+                <li><a href="/documentaries.html">Documentaries</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li id="hamburger" class="right"><a href="#"><img src="img/nav-icon.png"></a></li>
+            </ul>
+        </nav>
+        <nav class="header-nav-mobile">
+            <div class="nav-one">
+                <a href=""><img src="img/fs-logo-2.png" width="100px" height="auto"></a>
+            </div>
+            <div>
+                <a id="mobilehamburger" href="#"><img src="img/nav-icon.png"></a>
+            </div>
+        </nav>
+
+<!-- Fullscreen Menu (Initially Hidden) -->
+<div id="overlay" class="overlay">
+    <a href="#" class="close-btn" id="close-btn">&times;</a>
+    <div class="overlay-content">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/books.html">Books</a>
+        <a href="/documentaries.html">Documentaries</a>
+        <a href="/contact.html">Contact</a>
+    </div>
+</div>
+
+        <div class="hero">
+
+            <h1>Books</h1>
+        </div>
+    </header>
+    
+    <main>
+        
+        <div class="book-page">
+            <div class="book-left">
+                <img src="img/kingdom-book.png">
+            </div>
+            <div class="book-right">
+                <h2>Abandoned Kingdom</h2>
+                <h3>Unearthing the Forgotten Past and the Price of Revealing Lost Secrets</h3>
+                <p>Uncover the haunting secrets of a once-great civilization, revealing the mysteries hidden within crumbling palaces and ancient artifacts. As each layer of history is peeled back, forgotten stories of power, betrayal, and loss resurface, challenging what we know about the past.</p>
+                <p>This gripping exploration invites readers to question the fragility of human achievement, the fleeting nature of empires, and the consequences of uncovering truths that were meant to remain hidden. Along the way, it delves into the moral dilemmas faced by archaeologists and historians, leaving readers to ponder the cost of revealing long-buried secrets.</p>
+                <button class="buy-book">Buy It Now!</button>
+            </div>
+        </div>
+        <div class="book-page reverse-column">
+            <div class="book-left">
+                <h2>Turkish Origins</h2>
+                <h3>Tracing the Roots of a Rich Cultural Heritage</h3>
+                <p>Turkish Origins traces the journey of the Turkic peoples from Central Asia to Anatolia, where their traditions and languages took root. As they migrated across vast landscapes, they encountered and assimilated elements from various cultures, blending their own customs with those of the Persian, Arab, and Byzantine civilizations.</p>
+                <p>The book explores how these diverse influences not only shaped the rich cultural heritage of modern Turkey but also left lasting impacts on art, architecture, and governance. By delving into historical records, linguistic studies, and archaeological findings, Turkish Origins paints a vivid picture of how the Turkic identity evolved and how it continues to influence contemporary Turkish society today.</p>
+                <button class="buy-book">Buy It Now!</button>
+            </div>
+            <div class="book-right">
+                <img src="img/turkish-book.png">
+            </div>
+        </div>
+        <div class="book-page">
+            <div class="book-left">
+                <img src="img/sword-book.png">
+            </div>
+            <div class="book-right">
+                <h2>Sword of Legends</h2>
+                <h3>A Tale of Power, Destiny, and the Legacy of an Ancient Blade</h3>
+                <p>Sword of Legends follows the journey of an ancient blade, passed down through generations, at the heart of epic battles and forgotten kingdoms. From its forging in a lost civilization to its handover to legendary warriors, the sword has witnessed the rise and fall of empires, each chapter steeped in blood and valor.</p>
+                <p>This thrilling tale unravels the sword's mysterious origins and its pivotal role in shaping history, revealing how it became a symbol of power and hope. Along the way, readers are introduced to the unforgettable characters who sought the sword, each driven by their desires, ambitions, and a thirst for glory. As secrets are uncovered and destinies entwine, Sword of Legends explores the profound impact of this remarkable weapon on the hearts and minds of those who wield it, ultimately posing the question: what price must be paid for greatness?</p>                
+                <button class="buy-book">Buy It Now!</button>
+            </div>
+        </div>
+        <div class="egypt-head">
+            <img src="img/about-bottom.png">
+        </div>
+        <div class="social-header">
+            <h2>Let's Get Social</h2>
+        </div> 
+        <div class="social-section">
+            <div class="social-link">
+                <button>Instagram</button>
+            </div>
+            <div class="social-link">
+                <button>Twitter</button>
+            </div>
+            <div class="social-link">
+                <button>Youtube</button>
+            </div>
+        </div> 
+        <div class="bottom-contact">
+            <div class="bottom-contact-header">
+                <h2>Keep up to date on all things Savage!</h2>
+            </div>
+            <div class="bottom-contact-form">
+                <form class="email-form">
+                    <input type="email" name="email" value="Email Address" required>
+                    <button type="submit">SIGN ME UP</button>
+                </form>
+            </div>
+        </div>          
+    </main>
+    <footer class="footer">
+        <div class="left-footer">
+            <p>Frank Savage &copy; 2024</p>
+        </div>
+        <div class="right-footer">
+            <p>All Creative Rights Protected by Frank Savage</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

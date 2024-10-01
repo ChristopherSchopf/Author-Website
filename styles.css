@@ -40,6 +40,7 @@ header {
     margin-bottom: 0;
 }
 
+
 /* Classes */
 
 .header-nav ul {
@@ -418,6 +419,58 @@ input[type="email"] {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px -10px 15px rgba(0, 0, 0, 0.2);
 }
 
+.book-page {
+    display: flex;
+    justify-content: center;
+    padding: 0 20rem;
+    padding-bottom: 2rem;
+}
+
+.book-left, .book-right {
+    padding: 0 2rem;
+    padding-top: 0;
+    width: 50%;
+}
+
+.book-left, .book-right h2 {
+    margin-top: 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.book-left, .book-right h3 {
+    font-size: 1.5rem;
+    font-weight: 450;
+}
+
+.book-left, .book-right p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+}
+
+.book-right img, .book-left img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.book-page {
+    margin-top: 3rem;
+}
+
+.buy-book {
+    padding: 10px 20px; /* Adjust these values as needed */
+    background-color: #f5b041; /* Optional: Set background color */
+    border: none; /* Optional: Remove default border */
+    cursor: pointer; /* Optional: Change cursor on hover */
+    font-size: 1.5rem;
+    display: block; /* Turns the button into a block element */
+    margin: 1rem auto 0; /* Horizontally centers the block element */
+}
+
+
 /* Fullscreen overlay menu (navigation) */
 .overlay {
     height: 100%;  /* Fullscreen height */
@@ -467,7 +520,7 @@ input[type="email"] {
 }
 
 @media (max-width: 1800px) {
-    .travel-section {
+    .travel-section, .book-page {
         padding-left: 2rem;
         padding-right: 2rem;
     } 
@@ -490,7 +543,7 @@ input[type="email"] {
     .hero p {
         font-size: 2rem;
     }
-    .intro, .center-nav, .travel-section, .books-header, .books, .footer, .social-header, .bottom-contact {
+    .intro, .center-nav, .travel-section, .books-header, .books, .footer, .social-header, .bottom-contact, .book-page {
         padding-left: 2rem;
         padding-right: 2rem;
     }
@@ -499,8 +552,17 @@ input[type="email"] {
         align-items: center;
         gap: 1rem;
     }
-    .travel-left, .travel-right {
+    .travel-left, .travel-right, .book-left, .book-right {
         width: 100%;
+    }
+    .book-page {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+    .reverse-column {
+        flex-direction: column-reverse;
     }
 }
 
