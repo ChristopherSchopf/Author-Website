@@ -470,6 +470,48 @@ input[type="email"] {
     margin: 1rem auto 0; /* Horizontally centers the block element */
 }
 
+.documentaries-page {
+    padding: 2rem 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.documentaries-page img {
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 2%;
+}
+.film-box {
+    position: relative; /* Ensure it's positioned */
+}
+
+.doc-overlay {
+    position: absolute; /* Or 'fixed' if needed */
+    top: 75%;
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+    color: white;           /* Text color */
+    display: flex;          /* Center text */
+    padding: 0 2rem;
+    opacity: .75;             /* Initially hidden */
+    transition: opacity 0.3s ease; /* Transition for fade effect */
+    display: block;
+}
+
+.doc-overlay a {
+    text-decoration: underline;
+    color: #fff;
+}
+.doc-overlay a:hover {
+    opacity: .8;
+}
+
 
 /* Fullscreen overlay menu (navigation) */
 .overlay {
@@ -480,7 +522,7 @@ input[type="email"] {
     left: 0;
     background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
     display: none;  /* Initially hidden */
-    z-index: 1;     /* Ensure it sits above all other content */
+    z-index: 1     /* Ensure it sits above all other content */
 }
 
 .overlay-content {
@@ -524,6 +566,12 @@ input[type="email"] {
         padding-left: 2rem;
         padding-right: 2rem;
     } 
+    .doc-overlay {
+        top: 60%;
+        left: 5%;
+        right: 5%;
+        bottom: 5%;
+    }
 }
 @media (max-width: 1200px) {
     .header-nav {
@@ -543,16 +591,18 @@ input[type="email"] {
     .hero p {
         font-size: 2rem;
     }
-    .intro, .center-nav, .travel-section, .books-header, .books, .footer, .social-header, .bottom-contact, .book-page {
+    .intro, .center-nav, .travel-section, .books-header, 
+    .books, .footer, .social-header, .bottom-contact, .book-page, 
+    .documentaries-page, .about-page {
         padding-left: 2rem;
         padding-right: 2rem;
     }
-    .travel-section {
+    .travel-section, .about-page {
         flex-direction: column-reverse;
         align-items: center;
         gap: 1rem;
     }
-    .travel-left, .travel-right, .book-left, .book-right {
+    .travel-left, .travel-right, .book-left, .book-right, .about-left, .about-right {
         width: 100%;
     }
     .book-page {
@@ -573,6 +623,10 @@ input[type="email"] {
     .hero p {
         font-size: 2rem;
     }
+    .books {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -584,6 +638,13 @@ input[type="email"] {
     .hero p {
         font-size: 2rem;
     }
+    .doc-overlay {
+        top: 20%;
+        left: 5%;
+        right: 5%;
+        bottom: 5%;
+    }
+
 }
 
 @media (max-width: 425px) {
@@ -609,6 +670,15 @@ input[type="email"] {
     .center-nav a {
         font-size: 1.75rem;
         padding: 0 .75rem;
+    }
+    .doc-overlay {
+        top: 5%;
+        left: 5%;
+        right: 5%;
+        bottom: 5%;
+    }
+    .doc-overlay h2 {
+        font-size: 1.25rem;
     }
 }
 
