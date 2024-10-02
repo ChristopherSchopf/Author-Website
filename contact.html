@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank Savage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <ul>
+                <li class="left"><a href=""><img src="img/fs-logo-2.png" width="100px" height="auto"></a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/books.html">Books</a></li>
+                <li><a href="/documentaries.html">Documentaries</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li id="hamburger" class="right"><a href="#"><img src="img/nav-icon.png"></a></li>
+            </ul>
+        </nav>
+        <nav class="header-nav-mobile">
+            <div class="nav-one">
+                <a href=""><img src="img/fs-logo-2.png" width="100px" height="auto"></a>
+            </div>
+            <div>
+                <a id="mobilehamburger" href="#"><img src="img/nav-icon.png"></a>
+            </div>
+        </nav>
+
+<!-- Fullscreen Menu (Initially Hidden) -->
+<div id="overlay" class="overlay">
+    <a href="#" class="close-btn" id="close-btn">&times;</a>
+    <div class="overlay-content">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/books.html">Books</a>
+        <a href="/documentaries.html">Documentaries</a>
+        <a href="/contact.html">Contact</a>
+    </div>
+</div>
+
+        <div class="hero">
+
+            <h1>Contact</h1>
+        </div>
+    </header>
+    
+    <main>
+        
+        <div class="contact-form-page">
+            <h2>Let's Get In Touch</h2>
+            <form class="contact-form" action="#" method="post">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit">Send Message</button>
+              </form>
+              
+        </div>
+        <div class="egypt-head">
+            <img src="img/about-bottom.png">
+        </div>
+        <div class="social-header">
+            <h2>Let's Get Social</h2>
+        </div> 
+        <div class="social-section">
+            <div class="social-link">
+                <button>Instagram</button>
+            </div>
+            <div class="social-link">
+                <button>Twitter</button>
+            </div>
+            <div class="social-link">
+                <button>Youtube</button>
+            </div>
+        </div> 
+        <div class="bottom-contact">
+            <div class="bottom-contact-header">
+                <h2>Keep up to date on all things Savage!</h2>
+            </div>
+            <div class="bottom-contact-form">
+                <form class="email-form">
+                    <input type="email" name="email" value="Email Address" required>
+                    <button type="submit">SIGN ME UP</button>
+                </form>
+            </div>
+        </div>          
+    </main>
+    <footer class="footer">
+        <div class="left-footer">
+            <p>Frank Savage &copy; 2024</p>
+        </div>
+        <div class="right-footer">
+            <p>All Creative Rights Protected by Frank Savage</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
